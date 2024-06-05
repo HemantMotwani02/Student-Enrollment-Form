@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENT ENROLLMENT FORM</h1>
+        <div id="containerIn">
+
+            <div class="divIn">
+                <label class="labels">Name</label>
+                <input class="input" id="inputName" type="text" maxlength="30">
+            </div>
+
+            <div class="divIn">
+                <label class="labels">Email</label>
+                <input class="input" id="inputEmail" type="email" pattern=".+@globex\.com" size="30" >
+            </div>
+
+            <div class="divIn">
+                <label class="labels">Mobile</label>
+                <input class="input" id="inputMobile" type="tel" minlength="10">
+            </div>
+
+            <div class="divIn">
+                <label class="labels">Gender</label>
+                <input class="inrad" type="radio" id="radMale"><label for="radMale">Male</label>
+                <input class="inrad" type="radio" id="radFemale"><label for="radFemale">Female</label>
+            </div>
+            <div class="divIn">
+                <label class="labels">Skills</label>
+                <input class="inchk" type="checkbox" id="chkHTML"><label for="chkHTML">HTML</label>
+                <input class="inchk" type="checkbox" id="chkCSS"><label for="chkCSS">CSS</label>
+                <input class="inchk" type="checkbox" id="chkJavascript"><label for="chkJavascript">Javascript</label>
+            </div>
+            <br>
+            <button id="btnSubmit" class="btns">Submit</button>
+            <button id="btnReset" class="btns">Reset</button>
+        </div>
+
+        <div id="containerOut">
+            <center><h2>Result</h2></center>
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
